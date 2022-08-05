@@ -1,0 +1,8 @@
+Ứng dụng giỏ hàng hóa:
+Chức năng:
+* Quản lý các sản phẩm cần mua:
++ Thêm sản phẩm muốn mua.
++ Xóa sản phẩm không muốn mua nữa.
++ Hiển thị giá, hình ảnh, số lượng của từng sản phẩm mình vừa thêm vào giỏ.
++ Hiển thị tổng số tiền cần thanh toán.
++ Khi ấn vào biểu tượng giỏ hàng sẽ hiện ra giỏ hàng bên phải, ấn vào dấu x sẽ ẩn giỏ cart bên phải.
