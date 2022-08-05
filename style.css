@@ -1,0 +1,39 @@
+*{
+    margin: 10;
+    padding: 20;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.product-items{
+    display:flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 12px;
+}
+.product-item{
+    width: 19%;
+    background-color: aliceblue;
+    padding: 12px;
+    text-align: center;
+}
+.product-item img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.product-item-text{
+   display: flex; 
+   justify-content: space-between;
+}
+.product-item button{
+    margin-top: 12px;
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer; /*trỏ chuột hinh ban tay*/
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
