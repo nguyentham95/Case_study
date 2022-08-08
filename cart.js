@@ -47,7 +47,7 @@ function cartTotal(){
     // console.log(cartItem.length);
     for (let i = 0; i < cartItem.length; i++){
         let inputValue = cartItem[i].querySelector("input").value;
-        console.log(inputValue)
+        // console.log(inputValue)
         let productPrice = cartItem[i].querySelector(".prices").innerHTML;
         console.log(productPrice);
         let totalA = inputValue * productPrice*1000;
