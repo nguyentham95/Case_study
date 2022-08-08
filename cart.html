@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>My cart</title>
 </head>
 <body>
+    <div class="cart-icon">
+        <p><i class="fas fa-shopping-cart" style="color: red;"></i><span style="color: red;">0</span><sup style="color: red;">đ</sup></p>
+
+    </div>
     <section class="product">
        
         <div class="container"> 
@@ -16,7 +21,7 @@
                 <div class="product-item">
                     <img src="./bo quat decor.jpg" alt="">
                     <div class="product-item-text">
-                        <p><span>900.000</span><sup>đ</sup></p>
+                        <p><span>350.000</span><sup>đ</sup></p>
                         <h1 style="font-weight: bold; font-size: 18px">Set quạt decor</h1>
 
                     </div>
@@ -26,7 +31,7 @@
                 <div class="product-item">
                     <img src="./cay decor.jpg" alt="">
                     <div class="product-item-text">
-                        <p><span>500.000</span><sup>đ</sup></p>
+                        <p><span>250.000</span><sup>đ</sup></p>
                         <h1 style="font-weight: bold; font-size: 18px">Set cây decor</h1>
 
                     </div>
@@ -36,7 +41,7 @@
                 <div class="product-item">
                     <img src="./den led trang tri.jpg" alt="">
                     <div class="product-item-text">
-                        <p><span>200.000</span><sup>đ</sup></p>
+                        <p><span>150.000</span><sup>đ</sup></p>
                         <h1 style="font-weight: bold; font-size: 18px">Set dây đèn led decor</h1>
 
                     </div>
@@ -46,7 +51,7 @@
                 <div class="product-item">
                     <img src="./den ngu decor.jpg" alt="">
                     <div class="product-item-text">
-                        <p><span>700.000</span><sup>đ</sup></p>
+                        <p><span>400.000</span><sup>đ</sup></p>
                         <h1 style="font-weight: bold; font-size: 18px">Đèn ngủ </h1>
 
                     </div>
@@ -56,7 +61,7 @@
                 <div class="product-item">
                     <img src="./guong decor phong tam.jpg" alt="">
                     <div class="product-item-text">
-                        <p><span>900.000</span><sup>đ</sup></p>
+                        <p><span>350.000</span><sup>đ</sup></p>
                         <h1 style="font-weight: bold; font-size: 18px">Gương decor</h1>
 
                     </div>
@@ -68,62 +73,38 @@
             </div>
 
         </div>
-    </section> 
-    
-    
-    <h2>Cart</h2>
 
-    <form action="">
-        <table>
-            <thead>
-                <tr>
-                    <th>Sản phẩm</th>
-                    <th>Giá</th>
-                    <th>Số lượng</th>
-                    <th>Chọn</th>
-                </tr> 
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="display:flex; align-items:center"><img style="width: 70px" src="./bo quat decor.jpg" alt="">Set quạt decor</td>
-                    <td><p><span>1.200.000</span><sup>đ</sup></p></td>
-                    <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>
-                    <td style="cursor: pointer;">Xóa</td>
-                </tr>
-                <tr>
-                    <td style="display:flex; align-items:center"><img style="width: 70px" src="./cay decor.jpg" alt="">Set cây decor</td>
-                    <td><p><span>1.200.000</span><sup>đ</sup></p></td>
-                    <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>
-                    <td style="cursor: pointer;">Xóa</td>
-                </tr>
-                <tr>
-                    <td style="display:flex; align-items:center"><img style="width: 70px" src="./den led trang tri.jpg" alt="">Set dây đèn led decor</td>
-                    <td><p><span>1.200.000</span><sup>đ</sup></p></td>
-                    <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>
-                    <td style="cursor: pointer;">Xóa</td>
-                </tr>
-                <tr>
-                    <td style="display:flex; align-items:center"><img style="width: 70px" src="./den ngu decor.jpg" alt="">Đèn ngủ</td>
-                    <td><p><span>1.200.000</span><sup>đ</sup></p></td>
-                    <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>
-                    <td style="cursor: pointer;">Xóa</td>
-                </tr>
-                <tr>
-                    <td style="display:flex; align-items:center"><img style="width: 70px" src="./guong decor phong tam.jp" alt="">Gương decor</td>
-                    <td><p><span>1.200.000</span><sup>đ</sup></p></td>
-                    <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>
-                    <td style="cursor: pointer;">Xóa</td>
-                </tr>
-            </tbody>
-        </table>
-        <div style="text-align: right" class="price-total">
-            <p  style="font-weight: bold;" >Tổng tiền:<span id="price">0</span><sup>đ</sup></p>
-        </div>
-        
-            <button>Chốt đơn và thanh toán</button>
-        
-    </form>
-</section>
+    </section>
+    <section class="cart">
+        <i class="fas fa-times-circle" style="color: red;"></i>
+        <h2>Cart</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Chọn</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td style="display:flex; align-items:center"><img style="width: 70px" src="./bo quat decor.jpg" alt="">Set quạt decor</td>
+                        <td><p><span>1.200.000</span><sup>đ</sup></p></td>
+                        <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xóa</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div style="text-align: right" class="price-total">
+                <p  style="font-weight: bold;" >Tổng tiền:<span id="price">0</span><sup>đ</sup></p>
+            </div>
+            
+                <button>Chốt đơn và thanh toán</button>
+            
+        </form>
+    </section>
 </body>
 </html>
 <script src="cart.js"></script>
