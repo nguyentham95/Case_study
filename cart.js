@@ -69,6 +69,7 @@ function cartTotal(){
 }
 //delete
 function deleteCart(){
+    
     let cartItem = document.querySelectorAll("tbody tr");
     for (let i = 0; i < cartItem.length; i++){
         let productT = document.querySelectorAll(".cartDelete");
@@ -76,11 +77,16 @@ function deleteCart(){
         productT[i].addEventListener("click", function(event){
             let cartDelete = event.target;
             let cartItemDelete = cartDelete.parentElement.parentElement;
+            
+            alert("Bạn có chắc muốn xóa sản phẩm này?");
             cartItemDelete.remove();
             cartTotal();
         })
+    
     }
 }
+
+//change num
 function changeInput(){
     let cartItem = document.querySelectorAll("tbody tr");
     for (let i = 0; i < cartItem.length; i++){
