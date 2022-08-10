@@ -19,7 +19,7 @@ function addCart(productPrice,productImg,productName) {
     let cartItem = document.querySelectorAll("tbody tr");
     for (let i = 0; i < cartItem.length; i++){
         let productT = document.querySelectorAll(".title");
-        if (productT[i].innerHTML==  productName ) {
+        if (productT[i].innerHTML ==  productName ) {
             alert("Sản phẩm này đã có trong giỏ hàng, "
             + "vui lòng tăng số lượng trong giỏ hàng khi muốn mua thêm cùng 1 loại sản phẩm!");
             return;
