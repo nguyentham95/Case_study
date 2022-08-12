@@ -34,7 +34,7 @@ function addCart(productPrice,productImg,productName) {
     addtr.innerHTML = trcontent;
     let cartTable = document.querySelector("tbody");
     // console.log(cartTable)
-    cartTable.append(addtr); / them the tr vao cuoi  gio hang/
+    cartTable.append(addtr); // them the tr vao cuoi  gio hang/
     cartTotal();
     deleteCart();
     changeInput();
@@ -70,21 +70,25 @@ function cartTotal(){
 //delete
 function deleteCart(){
     
-    let cartItem = document.querySelectorAll("tbody tr");
+  let cartItem = document.querySelectorAll("tbody tr");
+   
     for (let i = 0; i < cartItem.length; i++){
-        let productT = document.querySelectorAll(".cartDelete");
-        
-        productT[i].addEventListener("click", function(event){
-            let cartDelete = event.target;
-            let cartItemDelete = cartDelete.parentElement.parentElement;
-            
-            alert("Bạn có chắc muốn xóa sản phẩm này?");
-            cartItemDelete.remove();
-            cartTotal();
-        })
-    
+    let productT = document.querySelectorAll(".cartDelete");
+   
+            productT[i].addEventListener("click", function(event){
+                let cartDelete = event.target;
+                let cartItemDelete = cartDelete.parentElement.parentElement;
+                
+                cartItemDelete.remove();
+                cartTotal();
+                
+            })
     }
-}
+        
+        
+} 
+    
+
 
 //change num
 function changeInput(){
